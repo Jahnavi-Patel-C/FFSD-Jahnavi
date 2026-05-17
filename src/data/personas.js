@@ -183,7 +183,7 @@ export const personas = {
         name: "Wide Leg Neutral Pants",
         brand: "H&M",
         price: "₹2,999",
-        image: "/images/products/soft_product2.png",
+        image: "/images/softminimal.jpg",
         link: "https://www2.hm.com/"
       }
     ],
@@ -201,8 +201,8 @@ export const personas = {
     wardrobeImages: [
       "/images/wardrobe/soft_wardrobe1.png",
       "/images/wardrobe/soft_wardrobe2.png",
-      "/images/wardrobe/soft_wardrobe3.png",
-      "/images/wardrobe/soft_wardrobe4.png"
+      "/images/softminimal.jpg",
+      "/images/minimal.jpg"
     ]
   },
 
@@ -286,7 +286,7 @@ export const personas = {
         name: "Slim Structured Pants",
         brand: "Zara",
         price: "₹3,490",
-        image: "/images/products/midnight_product2.jpg",
+        image: "/images/architect.jpg",
         link: "https://www.zara.com/"
       }
     ],
@@ -297,15 +297,15 @@ export const personas = {
 
     gallery: [
       "/images/outfits/midnight_look1.png",
-      "/images/outfits/midnight_look2.jpg",
-      "/images/outfits/midnight_look3.jpg"
+      "/images/architect.jpg",
+      "/images/sharp-put-together.jpg"
     ],
 
     wardrobeImages: [
-      "/images/wardrobe/midnight_wardrobe1.jpg",
-      "/images/wardrobe/midnight_wardrobe2.jpg",
-      "/images/wardrobe/midnight_wardrobe3.jpg",
-      "/images/wardrobe/midnight_wardrobe4.jpg"
+      "/images/personas/midnight_hero.png",
+      "/images/monochrome.jpg",
+      "/images/perso.jpg",
+      "/images/identity.jpg"
     ]
   },
 
@@ -390,7 +390,7 @@ export const personas = {
         name: "Oversized Knit Cardigan",
         brand: "Urbanic",
         price: "₹2,299",
-        image: "/images/products/muse_product2.png",
+        image: "/images/relaxed-outfit.jpg",
         link: "https://www.urbanic.com/"
       }
     ],
@@ -401,119 +401,119 @@ export const personas = {
 
     gallery: [
       "/images/outfits/muse_look1.png",
-      "/images/outfits/muse_look2.png",
-      "/images/outfits/muse_look3.png"
+      "/images/muse.jpg",
+      "/images/relaxed-outfit.jpg"
     ],
 
     wardrobeImages: [
-      "/images/wardrobe/muse_wardrobe1.png",
-      "/images/wardrobe/muse_wardrobe2.png",
-      "/images/wardrobe/muse_wardrobe3.png",
-      "/images/wardrobe/muse_wardrobe4.png"
-    ]
+      "/images/personas/muse_hero.png",
+      "/images/muse.jpg",
+      "/images/earthcolours.jpg",
+      "/images/experssion.jpg"
+    ],
   },
 
 
 
   bold_structured: {
-    id: "bold_structured",
+      id: "bold_structured",
 
-    name: "Statement Maker",
+      name: "Statement Maker",
 
-    hook: "You are the moment.",
+      hook: "You are the moment.",
 
-    description:
-      "You command attention without hesitation. Your style is bold, defined, and designed to stand out wherever you go.",
+      description:
+        "You command attention without hesitation. Your style is bold, defined, and designed to stand out wherever you go.",
 
-    longDescription:
-      "Your fashion energy is powerful, glamorous, and commanding. You enjoy high-impact styling that feels confident and unforgettable. Structured silhouettes, dramatic shapes, and statement pieces help you create an aesthetic that instantly captures attention.",
+      longDescription:
+        "Your fashion energy is powerful, glamorous, and commanding. You enjoy high-impact styling that feels confident and unforgettable. Structured silhouettes, dramatic shapes, and statement pieces help you create an aesthetic that instantly captures attention.",
 
-    personality:
-      "Powerful, charismatic, ambitious, and fearless.",
+      personality:
+        "Powerful, charismatic, ambitious, and fearless.",
 
-    styles: [
-      "Bold shapes",
-      "High contrast",
-      "Standout pieces"
-    ],
+      styles: [
+        "Bold shapes",
+        "High contrast",
+        "Standout pieces"
+      ],
 
-    traits: [
-      "Confident",
-      "Powerful",
-      "Luxurious",
-      "Dominant"
-    ],
+      traits: [
+        "Confident",
+        "Powerful",
+        "Luxurious",
+        "Dominant"
+      ],
 
-    colors: [
-      "Black",
-      "Gold",
-      "White",
-      "Ruby Red"
-    ],
+      colors: [
+        "Black",
+        "Gold",
+        "White",
+        "Ruby Red"
+      ],
 
-    fabrics: [
-      "Leather",
-      "Satin",
-      "Structured Blends"
-    ],
+      fabrics: [
+        "Leather",
+        "Satin",
+        "Structured Blends"
+      ],
 
-    aesthetic:
-      "Luxury fashion with runway-level confidence.",
+      aesthetic:
+        "Luxury fashion with runway-level confidence.",
 
-    styleTips: [
-      "Use one statement piece per outfit.",
-      "Lean into structure and contrast.",
-      "Accessorize boldly.",
-      "Own dramatic silhouettes."
-    ],
+      styleTips: [
+        "Use one statement piece per outfit.",
+        "Lean into structure and contrast.",
+        "Accessorize boldly.",
+        "Own dramatic silhouettes."
+      ],
 
-    avoid: [
-      "Muted styling",
-      "Overly casual basics",
-      "Safe combinations"
-    ],
+      avoid: [
+        "Muted styling",
+        "Overly casual basics",
+        "Safe combinations"
+      ],
 
-    wardrobeEssentials: [
-      "Statement blazer",
-      "Luxury handbag",
-      "Sharp heels",
-      "Bold sunglasses"
-    ],
+      wardrobeEssentials: [
+        "Statement blazer",
+        "Luxury handbag",
+        "Sharp heels",
+        "Bold sunglasses"
+      ],
 
-    products: [
-      {
-        name: "Structured Power Blazer",
-        brand: "Zara",
-        price: "₹5,990",
-        image: "/images/products/statement_product1.png",
-        link: "https://www.zara.com/"
-      },
+      products: [
+        {
+          name: "Structured Power Blazer",
+          brand: "Zara",
+          price: "₹5,990",
+          image: "/images/products/statement_product1.png",
+          link: "https://www.zara.com/"
+        },
 
-      {
-        name: "High Waist Statement Pants",
-        brand: "Mango",
-        price: "₹3,999",
-        image: "/images/products/statement_product2.png",
-        link: "https://shop.mango.com/"
-      }
-    ],
+        {
+          name: "High Waist Statement Pants",
+          brand: "Mango",
+          price: "₹3,999",
+          image: "/images/standingout.jpg",
+          link: "https://shop.mango.com/"
+        }
+      ],
 
-    tone: "powerful",
+      tone: "powerful",
 
-    image: "/images/personas/statement_hero.png",
+      image: "/images/personas/statement_hero.png",
 
-    gallery: [
-      "/images/outfits/statement_look1.png",
-      "/images/outfits/statement_look2.png",
-      "/images/outfits/statement_look3.png"
-    ],
+      gallery: [
+        "/images/outfits/statement_look1.png",
+        "/images/statement.jpg",
+        "/images/personality-bold.jpg"
+      ],
 
-    wardrobeImages: [
-      "/images/wardrobe/statement_wardrobe1.png",
-      "/images/wardrobe/statement_wardrobe2.png",
-      "/images/wardrobe/statement_wardrobe3.png",
-      "/images/wardrobe/statement_wardrobe4.png"
-    ]
-  }
+      wardrobeImages: [
+        "/images/personas/statement_hero.png",
+        "/images/statement.jpg",
+        "/images/personality-bold.jpg",
+        "/images/standingout.jpg"
+      ]
+    }
 
-};
+  };
