@@ -1,0 +1,255 @@
+/* ================= WOODEN WARDROBE INTRO ANIMATION ================= */
+.wardrobe-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: #1e140d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+.skip-wardrobe-btn {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  z-index: 10005;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #e6dfd3;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  transition: all 0.25s ease;
+}
+
+.skip-wardrobe-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+.wardrobe-frame {
+  position: relative;
+  height: 82vh;
+  max-height: 720px;
+  aspect-ratio: 682 / 1024;
+  width: auto;
+  max-width: 90vw;
+  background: transparent;
+  perspective: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  box-shadow: none;
+  border: none;
+}
+
+/* Base open wardrobe PNG image asset */
+.wardrobe-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Interior area inside the wardrobe image opening */
+.wardrobe-interior {
+  position: absolute;
+  top: 18%;
+  left: 19.5%;
+  width: 61%;
+  height: 68%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hanging-rod {
+  display: none;
+}
+
+.clothes-line {
+  position: absolute;
+  top: 12px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  z-index: 3;
+}
+
+.hanger-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hanger-hook {
+  width: 40px;
+  height: 30px;
+  margin-bottom: -4px;
+}
+
+/* Clothes graphics */
+.cloth-graphic {
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.blazer {
+  width: 95px;
+  height: 160px;
+  background: linear-gradient(145deg, #2b2b2b, #151515);
+  border-top: 3px solid #3d3d3d;
+}
+
+.blazer-collar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 50px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 25px solid #4a4a4a;
+}
+
+.blazer-button {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d4af37;
+}
+
+.dress {
+  width: 85px;
+  height: 220px;
+  background: linear-gradient(145deg, #e6c8be, #b58d80);
+  border-radius: 4px 4px 30px 30px;
+}
+
+.dress-strap-l, .dress-strap-r {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 20px;
+  background: #ffffff;
+}
+.dress-strap-l { left: 15px; }
+.dress-strap-r { right: 15px; }
+
+.jacket {
+  width: 105px;
+  height: 170px;
+  background: linear-gradient(145deg, #423023, #241911);
+  border-radius: 8px;
+}
+
+.jacket-zipper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(#d4af37, #8a6c42);
+}
+
+.trench {
+  width: 100px;
+  height: 250px;
+  background: linear-gradient(145deg, #c7a77e, #8f724e);
+}
+
+.trench-belt {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: #5c472e;
+}
+
+.sweater {
+  width: 90px;
+  height: 150px;
+  background: linear-gradient(145deg, #d9ccb6, #a69882);
+  border-radius: 12px;
+}
+
+.sweater-neck {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 15px;
+  border-radius: 0 0 20px 20px;
+  background: #3f2f20;
+}
+
+.wardrobe-tagline {
+  position: absolute;
+  bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #d4af37;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+/* Door image assets */
+.door {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: 10;
+  transform-style: preserve-3d;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.door-left {
+  left: 0;
+  transform-origin: left center;
+}
+
+.door-right {
+  right: 0;
+  transform-origin: right center;
+}
+
+.door-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
